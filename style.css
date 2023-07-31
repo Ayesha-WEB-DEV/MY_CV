@@ -1,0 +1,120 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+header {
+  background-color: #434242;
+  color: #fdf0f0;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+}
+
+.section {
+  margin-bottom: 1.5rem;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #080809;
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 800px;
+  background-color: #1a237e;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+.section-content {
+  margin-top: 0.5rem;
+}
+
+.section-content p {
+  margin-bottom: 0.5rem;
+}
+
+.section-content p:last-child {
+  margin-bottom: 0;
+}
+
+.section-content a {
+  color: #1a237e;
+  text-decoration: none;
+}
+
+.section-content a:hover {
+  text-decoration: underline;
+}
+
+.name {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0;
+  color: #1a237e;
+}
+
+.job-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+  color: #1a237e;
+}
+
+.section-content h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #1a237e;
+  margin-top: 1.5rem;
+}
+
+.section-content p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.skills ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skills li {
+  margin-right: 15px;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  color: #35363e;
+  background-color: #f0f0f0;
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeInAnimation 1s ease-in-out forwards;
+}
+
+@keyframes fadeInAnimation {
+  to {
+    opacity: 1;
+  }
+}
